@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+/// Controller para mostrar e pesquisar as Localizações
 final class RMLocationViewController: UIViewController {
 
     override func viewDidLoad() {

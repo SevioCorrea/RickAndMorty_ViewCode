@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+/// Controller para mostrar as opções de configurações
 final class RMSettingsViewController: UIViewController {
 
     override func viewDidLoad() {

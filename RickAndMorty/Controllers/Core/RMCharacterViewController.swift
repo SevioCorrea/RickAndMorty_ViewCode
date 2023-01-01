@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+/// Controller para mostrar e pesquisar os Personagens
 final class RMCharacterViewController: UIViewController {
 
     override func viewDidLoad() {
