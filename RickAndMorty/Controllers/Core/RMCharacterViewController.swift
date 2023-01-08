@@ -12,7 +12,7 @@ import UIKit
 /// Controller para mostrar e pesquisar os Personagens
 final class RMCharacterViewController: UIViewController {
     
-    private let characterListView = CharacterListView()
+    private let characterListView = RMCharacterListView()
     
 
     override func viewDidLoad() {
