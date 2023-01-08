@@ -19,6 +19,9 @@ Por enquanto ainda não há utilização de Libs de Terceiros. Para rodar, basta
 | Tab bars | ✅ |
 | Scroll infinito | ⏳ |
 | Settings | ⏳ |
+| Characters Screen | ⏳ |
+| Locations Screen | ❌ |
+| Episodes Screen | ❌ |
 
 - ✅ = Ready to use
 - ⏳ = In progress
