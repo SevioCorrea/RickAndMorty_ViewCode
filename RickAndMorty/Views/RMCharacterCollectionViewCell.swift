@@ -55,8 +55,8 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
     
     func addConstraints() {
         NSLayoutConstraint.activate([
-            statusLabel.heightAnchor.constraint(equalToConstant: 40),
-            nameLabel.heightAnchor.constraint(equalToConstant: 40),
+            statusLabel.heightAnchor.constraint(equalToConstant: 30),
+            nameLabel.heightAnchor.constraint(equalToConstant: 30),
             
             statusLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
             statusLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
