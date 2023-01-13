@@ -10,7 +10,7 @@ import UIKit
 
 
 /// Controller para mostrar e pesquisar os Personagens
-final class RMCharacterViewController: UIViewController {
+final class RMCharacterViewController: UIViewController, RMCharacterListViewDelegate {
     
     private let characterListView = RMCharacterListView()
     
@@ -28,6 +28,7 @@ final class RMCharacterViewController: UIViewController {
     }
     
     private func setUpView() {
+        characterListView.delegate = self
         view.addSubview(characterListView)
         NSLayoutConstraint.activate([
             characterListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -37,4 +38,13 @@ final class RMCharacterViewController: UIViewController {
         ])
         
     }
+    
+    // MARK: - RMCharacterListViewDelegate
+    func rmCharacterListView(_ characterListView: RMCharacterListView, didSelectCharacter character: RMCharacter) {
+        // Abrir a Detail Controller para cada Personagem
+        let viewModel = RMCharacterDetailViewViewModel(character: character)
+        let detailVC = RMCharacterDetailViewController(viewModel: viewModel)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
 }
