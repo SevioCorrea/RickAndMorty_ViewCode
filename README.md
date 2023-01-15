@@ -17,9 +17,10 @@ Por enquanto ainda não há utilização de Libs de Terceiros. Para rodar, basta
 | :---------- | :--------- |
 | Temas dark e light | ✅ |
 | Tab bars | ✅ |
+| Characters Screen | ✅ |
+| Characters Detail Screen | ⏳ |
 | Scroll infinito | ⏳ |
 | Settings | ⏳ |
-| Characters Screen | ⏳ |
 | Locations Screen | ❌ |
 | Episodes Screen | ❌ |
 
