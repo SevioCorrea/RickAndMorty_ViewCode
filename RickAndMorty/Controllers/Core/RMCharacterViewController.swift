@@ -44,6 +44,7 @@ final class RMCharacterViewController: UIViewController, RMCharacterListViewDele
         // Abrir a Detail Controller para cada Personagem
         let viewModel = RMCharacterDetailViewViewModel(character: character)
         let detailVC = RMCharacterDetailViewController(viewModel: viewModel)
+        detailVC.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(detailVC, animated: true)
     }
     

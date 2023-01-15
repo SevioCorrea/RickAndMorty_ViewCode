@@ -11,8 +11,10 @@ import UIKit
 
 /// Controller para mostrar os detalhes de um Personagem
 class RMCharacterDetailViewController: UIViewController {
+    private let viewModel: RMCharacterDetailViewViewModel
 
     init(viewModel: RMCharacterDetailViewViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -26,6 +28,7 @@ class RMCharacterDetailViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground
+        title = viewModel.title
     }
 
 }
